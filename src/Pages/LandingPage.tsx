@@ -40,7 +40,7 @@ export const LandingPage = () => {
                 return el = 'February'
             }
             else if(dateCount >= 60 && dateCount <= 89){
-                return el = 'Mah'
+                return el = 'March'
             }
             else if(dateCount >= 90 && dateCount <= 119){
                 return el = 'April'
