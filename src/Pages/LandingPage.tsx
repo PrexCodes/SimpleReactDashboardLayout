@@ -3,9 +3,7 @@ import styled from "styled-components";
 import {RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 export const LandingPage = () => {
     
-    const [dateCount, newDate] = useState<number>(1);
-    const [initState, newState] = useState<number>(0)
-    const [initMonth, newMonth] = useState<string>("January")
+
 
     console.log(dateCount)
     function increase(){
@@ -40,7 +38,7 @@ export const LandingPage = () => {
                 return el = 'February'
             }
             else if(dateCount >= 60 && dateCount <= 89){
-                return el = 'Mars'
+                return el = 'March'
             }
             else if(dateCount >= 90 && dateCount <= 119){
                 return el = 'April'
