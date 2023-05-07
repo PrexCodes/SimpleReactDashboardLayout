@@ -39,7 +39,7 @@ font-size: 30px;
 const Container = styled.div<{ww:any}>`
 height: calc(100vh - 155px);
 width: ${({ww})=>ww ? '30px' : '200px'};
-background-color: gray;
+/* background-color: gray; */
 justify-content: flex-end;
 display: flex;
 `
