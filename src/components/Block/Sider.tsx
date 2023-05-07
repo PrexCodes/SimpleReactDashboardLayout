@@ -42,6 +42,6 @@ width: ${({ww})=>ww ? '30px' : '200px'};
 background-color: #2a2929;
 color: white;
 justify-content: flex-end;
-display: flex;
+/* display: flex; */
 `
 
