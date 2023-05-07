@@ -1,1 +1,1 @@
-dateCount >= 60 && dateCount <= 89
+I will Pray
