@@ -3,7 +3,9 @@ import styled from "styled-components";
 import {RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 export const LandingPage = () => {
     
-
+    const [dateCount, newDate] = useState<number>(1);
+    const [initState, newState] = useState<number>(0)
+    const [initMonth, newMonth] = useState<string>("January")
 
     console.log(dateCount)
     function increase(){
