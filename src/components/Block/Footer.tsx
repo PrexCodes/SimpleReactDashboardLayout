@@ -12,7 +12,13 @@ export const Footer = () => {
 const Container = styled.div`
   width: 100%;
   height: 60px;
-  background-color: purple;
+  background: rgb(254, 231, 251);
+  background: linear-gradient(
+    60deg,
+    rgba(254, 231, 251, 1) 0%,
+    rgba(6, 103, 156, 1) 0%,
+    rgba(95, 192, 231, 1) 100%
+  );
   color: white;
   display: flex;
   justify-content: center;

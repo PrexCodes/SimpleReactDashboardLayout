@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineMenu } from "react-icons/ai";
 
 export const Header = () => {
   return (
     <Container>
       <Main>
         <Div>
-          <Logo> Logo</Logo>
+          <Logo> MyWebsite </Logo>
           <Text> Browse </Text>
           <Icon />
         </Div>
@@ -18,7 +18,7 @@ export const Header = () => {
             <SIcon></SIcon>
           </SearchHolder>
         </Div>
-        <Div> 3 </Div>
+        <Div> <AiOutlineMenu size={30}> Login </AiOutlineMenu> </Div>
       </Main>
     </Container>
   );
@@ -60,7 +60,7 @@ const Div = styled.div`
   align-items: center;
 `;
 const Logo = styled.div`
-  width: 40px;
+  width: 80px;
   background-color: gray;
   padding: 10px;
   margin-right: 10px;

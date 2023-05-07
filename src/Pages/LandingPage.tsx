@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import {RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
+
+import {TbRun, TbSwimming, TbBike} from 'react-icons/tb'
 export const LandingPage = () => {
     
     const [dateCount, newDate] = useState<number>(1);
@@ -90,9 +92,35 @@ export const LandingPage = () => {
               <SubNumber>{initMonth}</SubNumber>
               <Icon2 onClick={()=>{remove()}}></Icon2>
             </Div>
-            <Div bg="w">2</Div>
-            <Div bg="w">3</Div>
-            <Div bg="w">4</Div>
+            <Div bg="w">
+                <IconA></IconA>
+                <div>
+                <Des>Running</Des>
+                <span>
+                <Stats>7km</Stats><Stats2> /10km</Stats2>
+                </span>
+                </div>
+            </Div>
+            <Div bg="w">
+                <IconB></IconB>
+                <div>
+                <Des>Swimming</Des>
+                <span>
+                <Stats>5km</Stats><Stats2> /10km</Stats2>
+                </span>
+                </div>
+            </Div>
+            <Div bg="w">
+                <IconC></IconC>
+                <div>
+                <Des>Bike</Des>
+                <span>
+                <Stats>8km</Stats><Stats2> /10km</Stats2>
+                </span>
+                </div>
+            </Div>
+            
+            
           </Card>
         </MainBG>
       </Main>
@@ -100,7 +128,41 @@ export const LandingPage = () => {
   );
 };
 
+const IconA = styled(TbRun)`
+color: rgb(71,139,230);
+font-size: 40px;
+margin-top: 20px;
+`
+const IconB = styled(TbSwimming)`
+color: rgb(71,139,230);
+font-size: 40px;
+margin-top: 20px;
+`
 
+const IconC = styled(TbBike)`
+color: rgb(71,139,230);
+font-size: 40px;
+margin-top: 20px;
+`
+
+const Stats = styled.span`
+font-weight: 700;
+color: black;
+font-size: 12px;
+`
+const Stats2 = styled.span`
+font-weight: 200;
+color: black;
+font-size: 12px;
+
+`
+const Des = styled.div`
+color: gray;
+font-weight: 700;
+font-size: 14px;
+text-transform: uppercase;
+
+`
 
 const Icon2 = styled(RiArrowDropDownLine)`
 font-size: 30px;
@@ -142,14 +204,21 @@ line-height: 0.85
 const SubNumber = styled.div``
 const Div = styled.div<{ bg: string }>`
   width: 110px;
+
   height: 80%;
   background-color: ${({ bg }) => (bg ? "white" : "transparent")};
   border-radius: 3px;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  transition: ease-in-out 800ms;
+    :hover{
+        transform: scale(1.10);
+        cursor: pointer;
+    }
+
 `;
 
 const Card = styled.div`
