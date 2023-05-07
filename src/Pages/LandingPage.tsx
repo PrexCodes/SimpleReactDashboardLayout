@@ -33,7 +33,7 @@ export const LandingPage = () => {
     }
 
     function changeDate(){
-        newMonth((el: string)=>{
+        newMonth((el: any)=>{
             if(dateCount <= 29 ){
                 return el = 'January'
             }else if(dateCount >= 29 && dateCount <= 61){
